@@ -5,6 +5,11 @@
 		"description": "Crypto compounding reward calculator"
 	},
 	{
+		"name": "Spotify Stats",
+		"link": "https://spotify-stats.ajzbc.com",
+		"description": "Checkout your top played artists and tracks recently and of all time"
+	},
+	{
 		"name": "Word Ladder",
 		"link": "https://wordladder.io",
 		"description": "Start with two words and find the words between to connect them"
