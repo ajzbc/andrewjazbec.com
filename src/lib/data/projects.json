@@ -1,22 +1,22 @@
 [
 	{
 		"name": "DeFi Calculator",
-		"link": "https://deficalc.io",
+		"url": "https://deficalc.io",
 		"description": "Crypto compounding reward calculator"
 	},
 	{
 		"name": "Spotify Stats",
-		"link": "https://spotify-stats.ajzbc.com",
+		"url": "https://spotify-stats.ajzbc.com",
 		"description": "Checkout your top played artists and tracks recently and of all time"
 	},
 	{
 		"name": "Word Ladder",
-		"link": "https://wordladder.io",
+		"url": "https://wordladder.io",
 		"description": "Start with two words and find the words between to connect them"
 	},
 	{
 		"name": "Kanye.Rest",
-		"link": "https://kanye.rest",
+		"url": "https://kanye.rest",
 		"description": "A free REST API for random Kanye West quotes (Kanye as a Service)"
 	}
 ]
