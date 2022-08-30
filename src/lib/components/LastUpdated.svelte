@@ -4,7 +4,7 @@
 		const data = await res.json();
 
 		if (res.ok) {
-			return data.updated_at;
+			return data.pushed_at;
 		} else {
 			throw new Error(data);
 		}
