@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+	<body class="overflow-hidden">
+		<div class="effect"></div>
+		<main class="flex items-center justify-center">
+			<nav class="relative flex flex-col items-center justify-end pb-12 w-[20rem] h-[20rem]">
+				<h1 class="text-xl mb-4">andrew jazbec</h1>
+				<div>
+					<a href="mailto:andrew@jazbec.io">email</a>
+					<a href="https://github.com/ajzbc" target="_blank">github</a>
+					<a href="https://twitter.com/andrewjazbec" target="_blank">twitter</a>
+				</div>
+			</nav>
+		</main>
+	</body>
+</Layout>
+
+<style lang="postcss">
+	html, body, main {
+		@apply w-full h-full;
+	}
+
+	body {
+		@apply font-mono bg-slate-600 text-slate-100;
+	}
+
+	nav::before {
+		@apply absolute top-0 left-0 w-full h-full bg-cover mix-blend-luminosity -z-10; 
+		content: "";
+		background-image: url('/profile.png');
+	}
+
+	nav div {
+		@apply flex gap-3;
+	}
+
+	nav div a {
+		@apply px-1 py-0.5;
+		@apply hover:bg-purple-600;
+	}
+
+	.effect {
+		@apply absolute w-full h-full -z-10;
+		filter: contrast(175%) brightness(100%); 
+  		background:
+		  linear-gradient(0deg, black, transparent),
+		  url('/noise.svg');
+	}
+</style>

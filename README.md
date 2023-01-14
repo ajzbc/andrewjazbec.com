@@ -1,4 +1,6 @@
-```bash
-npm install
-npm run dev
+# andrewjazbec.com
+
+```
+pnpm install
+pnpm dev
 ```

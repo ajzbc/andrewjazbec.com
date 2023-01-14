@@ -1,9 +1,12 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
 	theme: {
-		fontFamily: {
-			sans: ['SFRounded', 'sans-serif']
-		}
+		extend: {
+			backgroundImage: {
+				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+			},
+		},
 	},
-	plugins: []
+	plugins: [],
 };
