@@ -13,24 +13,23 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 		<link rel="icon" href="/favicon.ico" sizes="any" />
 
-		<!-- Primary Meta Tags -->
 		<title>{title}</title>
 		<meta name="title" content={title} />
 		<meta name="description" content={description} />
 		<link rel="canonical" href={canonicalURL} />
 
-		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={canonicalURL} />
 		<meta property="og:site_name" content={title} />
 
-		<!-- Twitter -->
 		<meta property="twitter:card" content="summary"/>
 		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
 		<meta property="twitter:creator" content="@andrewjazbec" />
+
+		<script async defer data-website-id="d10526a8-5a73-451b-a69c-36fe153a9842" src="https://countdog.com/woof.js"></script>
 	</head>
 	<slot />
 </html>
