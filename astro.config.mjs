@@ -1,10 +1,15 @@
-import { defineConfig } from "astro/config";
+// @ts-check
+import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-import tailwind from "@astrojs/tailwind";
+import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [tailwind()],
-	site: "https://andrewjazbec.com",
+  adapter: cloudflare({
+    platformProxy: {
+      enabled: true
+    },
+
+    imageService: "cloudflare"
+  })
 });
