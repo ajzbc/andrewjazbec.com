@@ -1,47 +1,26 @@
 ---
-
+import Layout from "../layouts/layout.astro";
 ---
 
-<html
-    lang="en"
-    style={{
-        height: "100%",
-    }}
->
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <title>Andrew Jazbec</title>
-    </head>
-    <body
+<Layout>
+    <div
         style={{
-            height: "100%",
-            display: "grid",
-            placeItems: "center",
-            fontFamily:
-                "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            textAlign: "center",
         }}
     >
-        <div
+        <h1
             style={{
-                textAlign: "center",
+                fontSize: "1.5rem",
+                fontWeight: 600,
             }}
         >
-            <h1
-                style={{
-                    fontSize: "1.5rem",
-                    fontWeight: 600,
-                }}
-            >
-                Andrew Jazbec
-            </h1>
-            <a
-                href="mailto:andrew@jazbec.io"
-                style={{
-                    fontSize: "1.25rem",
-                }}>email</a
-            >
-        </div>
-    </body>
-</html>
+            Andrew Jazbec
+        </h1>
+        <a
+            href="mailto:andrew@jazbec.io"
+            style={{
+                fontSize: "1.25rem",
+            }}>email</a
+        >
+    </div>
+</Layout>

@@ -1,0 +1,42 @@
+---
+const title = "Andrew Jazbec";
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html
+    lang="en"
+    style={{
+        height: "100%",
+    }}
+>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+
+        <title>{title}</title>
+        <meta name="title" content={title} />
+        <link rel="canonical" href={canonicalURL} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:url" content={canonicalURL} />
+        <meta property="og:site_name" content={title} />
+
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:creator" content="@andrewjazbec" />
+    </head>
+    <body
+        style={{
+            height: "100%",
+            display: "grid",
+            placeItems: "center",
+            fontFamily:
+                "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+        }}
+    >
+        <slot />
+    </body>
+</html>
